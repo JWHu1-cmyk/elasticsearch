@@ -13,3 +13,9 @@ xpack.security.authc:
     username: anonymous_user
     roles: anonymous_role
     authz_exception: true
+
+# Enable CORS
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+http.cors.allow-methods: OPTIONS, HEAD, GET, POST, PUT, DELETE
+http.cors.allow-headers: X-Requested-With, X-Auth-Token, Content-Type, Content-Length, Authorization
